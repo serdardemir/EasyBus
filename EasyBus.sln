@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Tests", "EasyBus.Tests\EasyBus.Tests.csproj", "{04D4CF27-E8F9-4428-8CFA-D5F86AF7E9AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Abstraction", "EasyBus.Abstraction\EasyBus.Abstraction.csproj", "{4BC13074-2309-460D-B4A5-A5094604A67E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04D4CF27-E8F9-4428-8CFA-D5F86AF7E9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D4CF27-E8F9-4428-8CFA-D5F86AF7E9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D4CF27-E8F9-4428-8CFA-D5F86AF7E9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D4CF27-E8F9-4428-8CFA-D5F86AF7E9AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC13074-2309-460D-B4A5-A5094604A67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC13074-2309-460D-B4A5-A5094604A67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC13074-2309-460D-B4A5-A5094604A67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC13074-2309-460D-B4A5-A5094604A67E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
