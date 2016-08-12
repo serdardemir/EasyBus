@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4BC13074-2309-460D-B4A5-A5094604A67E}</ProjectGuid>
+    <ProjectGuid>{2B7E16D8-F917-474D-BA38-7CF730E88B01}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EasyBus.Abstraction</RootNamespace>
-    <AssemblyName>EasyBus.Abstraction</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>EasyBus.RabbitMQIntegration</RootNamespace>
+    <AssemblyName>EasyBus.RabbitMQIntegration</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -30,29 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SimpleInjector">
-      <HintPath>..\ThirdParty\SimpleInjector.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contracts\IPublisher.cs" />
-    <Compile Include="Contracts\IMessageBus.cs" />
-    <Compile Include="Contracts\IMessageHandler.cs" />
-    <Compile Include="Contracts\IMessage.cs" />
-    <Compile Include="Contracts\IRequestMessage.cs" />
-    <Compile Include="Contracts\IResponse.cs" />
-    <Compile Include="Contracts\IResponseMessage.cs" />
-    <Compile Include="Contracts\IResponseMessageHandler.cs" />
-    <Compile Include="Contracts\ISubscriber.cs" />
-    <Compile Include="MessageEmitter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
