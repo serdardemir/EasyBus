@@ -31,3 +31,14 @@ foreach (var item in messageHandlers)
 
 
 ```
+**Specify how the policy should handle consumer faults**
+```cs
+<add key="RetryInterval" value="1" />
+<add key="RetryCount" value="3" />
+ 
+Policy.Execute<OperationResult>(() =>
+{
+	
+}, message);
+
+```
