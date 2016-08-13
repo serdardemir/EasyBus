@@ -53,6 +53,8 @@
     <Compile Include="Contracts\IResponseMessageHandler.cs" />
     <Compile Include="Contracts\ISubscriber.cs" />
     <Compile Include="MessageEmitter.cs" />
+    <Compile Include="MessageHandler.cs" />
+    <Compile Include="OperationResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

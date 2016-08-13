@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EasyBus.Consumer</RootNamespace>
     <AssemblyName>EasyBus.Consumer</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,7 +40,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Handlers\LOGMessageHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EasyBus.Abstraction\EasyBus.Abstraction.csproj">
+      <Project>{4bc13074-2309-460d-b4a5-a5094604a67e}</Project>
+      <Name>EasyBus.Abstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBus.Shared\EasyBus.Shared.csproj">
+      <Project>{185fe1c3-fb98-4f64-bf30-4ef105479454}</Project>
+      <Name>EasyBus.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyBus.Types\EasyBus.Types.csproj">
+      <Project>{744ad557-c72c-450d-9dde-3f2779995f0e}</Project>
+      <Name>EasyBus.Types</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Handlers\ErrorHandlers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

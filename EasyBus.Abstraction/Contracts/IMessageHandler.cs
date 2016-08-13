@@ -5,7 +5,7 @@ namespace EasyBus.Abstraction.Contracts
 {
     public interface IMessageHandler
     {
-        void Handle(IMessage message, MessageEmitter emitter);
+        void Handle(IMessage message);
 
         string QueueName { get; }
     }
