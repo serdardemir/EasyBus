@@ -1,6 +1,9 @@
 # EasyBus
 Lightweight Message Bus for .Net Easy integration with multiple messaging frameworks including RabbitMQ, ActiveMQ ,maybe MSMQ
 
+[![Build status](https://ci.appveyor.com/api/projects/status/809jr48poq9op086?svg=true)](https://ci.appveyor.com/project/serdardemir/easybus)
+
+
 ![EasyBus Logo](https://github.com/serdardemir/EasyBus/blob/master/wiki/images/integration.png)
 
 How to use?
