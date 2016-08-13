@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Types", "EasyBus.Ty
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Consumer", "EasyBus.Consumer\EasyBus.Consumer.csproj", "{36F0B9AF-5326-4338-AEE7-DF36AF5A397C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Shared", "EasyBus.Shared\EasyBus.Shared.csproj", "{185FE1C3-FB98-4F64-BF30-4EF105479454}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{36F0B9AF-5326-4338-AEE7-DF36AF5A397C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36F0B9AF-5326-4338-AEE7-DF36AF5A397C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36F0B9AF-5326-4338-AEE7-DF36AF5A397C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{185FE1C3-FB98-4F64-BF30-4EF105479454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{185FE1C3-FB98-4F64-BF30-4EF105479454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{185FE1C3-FB98-4F64-BF30-4EF105479454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{185FE1C3-FB98-4F64-BF30-4EF105479454}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
