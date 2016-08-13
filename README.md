@@ -5,11 +5,29 @@ Lightweight Message Bus for .Net Easy integration with multiple messaging framew
 How to use?
 ========================
 **Naming Convention for error strategy** 
+......
+
+
+
 
 
 
 **Pub / Sub Sample**
 ```cs
- // Find all registered subsriber
- var subscriber = container.GetInstance<ISubscriber>();
+// Find subsriber. (RabbitMQ, ActiveMQ etc.)
+var subscriber = container.GetInstance<ISubscriber>();
+
+// Find all message handlers in running process
+var messageHandlers = container.GetAllInstances<IMessageHandler>();
+
+console.WriteLine(messageHandlers.Count() + " subscriber found.", ConsoleColor.Green);
+
+//Start to subscribe (async) for all message handlers
+foreach (var item in messageHandlers)
+{                    
+		subscriber.Subscribe(item);
+	
+}
+
+
 ```
