@@ -72,6 +72,7 @@ namespace EasyBus.RabbitMQIntegration
         
         public void Subscribe(IResponse response)
         {
+            
         }
         
         public void Response<TRequest, TResponse>(IResponseMessageHandler handler)
