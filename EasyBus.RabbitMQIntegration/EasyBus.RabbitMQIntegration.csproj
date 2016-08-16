@@ -34,10 +34,16 @@
     <Reference Include="EasyNetQ">
       <HintPath>..\ThirdParty\EasyNetQ.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
     <Reference Include="RabbitMQ.Client">
       <HintPath>..\ThirdParty\RabbitMQ.Client.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleInjector, Version=2.8.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\SimpleInjector.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,13 +55,20 @@
     <Compile Include="ConsumerErrorStrategy.cs" />
     <Compile Include="ErrorStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publisher.cs" />
     <Compile Include="QueueLogManager.cs" />
     <Compile Include="RabbitBus.cs" />
+    <Compile Include="RabbitMQIntegrationModule.cs" />
+    <Compile Include="Subscriber.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EasyBus.Abstraction\EasyBus.Abstraction.csproj">
+      <Project>{4bc13074-2309-460d-b4a5-a5094604a67e}</Project>
+      <Name>EasyBus.Abstraction</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EasyBus.Shared\EasyBus.Shared.csproj">
       <Project>{185fe1c3-fb98-4f64-bf30-4ef105479454}</Project>
       <Name>EasyBus.Shared</Name>

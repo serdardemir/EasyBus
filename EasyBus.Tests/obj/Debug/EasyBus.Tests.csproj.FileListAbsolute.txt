@@ -1,10 +1,10 @@
-C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Tests\bin\Debug\EasyBus.Tests.dll
-C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Tests\bin\Debug\EasyBus.Tests.pdb
-C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Tests\obj\Debug\EasyBus.Tests.csprojResolveAssemblyReference.cache
-C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Tests\obj\Debug\EasyBus.Tests.dll
-C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Tests\obj\Debug\EasyBus.Tests.pdb
 C:\Users\admin\Documents\GitHub\EasyBus\EasyBus.Tests\bin\Debug\EasyBus.Tests.dll
 C:\Users\admin\Documents\GitHub\EasyBus\EasyBus.Tests\bin\Debug\EasyBus.Tests.pdb
 C:\Users\admin\Documents\GitHub\EasyBus\EasyBus.Tests\obj\Debug\EasyBus.Tests.csprojResolveAssemblyReference.cache
 C:\Users\admin\Documents\GitHub\EasyBus\EasyBus.Tests\obj\Debug\EasyBus.Tests.dll
 C:\Users\admin\Documents\GitHub\EasyBus\EasyBus.Tests\obj\Debug\EasyBus.Tests.pdb
+C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Tests\bin\Debug\EasyBus.Tests.dll
+C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Tests\bin\Debug\EasyBus.Tests.pdb
+C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Tests\obj\Debug\EasyBus.Tests.csprojResolveAssemblyReference.cache
+C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Tests\obj\Debug\EasyBus.Tests.dll
+C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Tests\obj\Debug\EasyBus.Tests.pdb
