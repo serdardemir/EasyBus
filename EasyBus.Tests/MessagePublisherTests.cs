@@ -35,7 +35,7 @@ namespace EasyBus.Tests
                  StatusCode = "404",
                  Time = DateTime.Now,
                  User = "TheUser",
-                 WebHostHtmlMessage = "<b>Ugly Error Message</b>"
+                 WebHostHtmlMessage = "Error Message"
 
 
              });
