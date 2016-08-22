@@ -1,10 +1,8 @@
-﻿using EasyBus.RabbitMQIntegration;
+﻿using System;
+using System.Linq;
 using EasyBus.Shared.Helpers;
 using EasyNetQ;
 using EasyNetQ.Consumer;
-using System;
-using System.Configuration;
-using System.Linq;
 
 namespace EasyBus.RabbitMQIntegration
 {
