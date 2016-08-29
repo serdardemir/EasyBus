@@ -24,6 +24,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CF3EBF
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Scheduler", "EasyBus.Scheduler\EasyBus.Scheduler.csproj", "{7326B8B0-09F7-4BF0-90AD-015CE188C680}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Mongo", "EasyBus.Mongo\EasyBus.Mongo.csproj", "{823D5BD1-C9BF-4ECA-BE21-9D27A0DDC404}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +62,14 @@ Global
 		{F17DA176-B4C3-4E45-B2D3-09D80878836A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F17DA176-B4C3-4E45-B2D3-09D80878836A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F17DA176-B4C3-4E45-B2D3-09D80878836A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7326B8B0-09F7-4BF0-90AD-015CE188C680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7326B8B0-09F7-4BF0-90AD-015CE188C680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7326B8B0-09F7-4BF0-90AD-015CE188C680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7326B8B0-09F7-4BF0-90AD-015CE188C680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{823D5BD1-C9BF-4ECA-BE21-9D27A0DDC404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{823D5BD1-C9BF-4ECA-BE21-9D27A0DDC404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{823D5BD1-C9BF-4ECA-BE21-9D27A0DDC404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{823D5BD1-C9BF-4ECA-BE21-9D27A0DDC404}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
