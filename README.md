@@ -9,10 +9,33 @@ Lightweight Message Bus for .Net Easy integration with multiple messaging framew
 
 #### Easy to install
 EasyBus.RabbitMQIntegration is on NuGet. To install it, run the following command in the Package Manager Console
-```csharp
-//**Install v1**
+
+* [Nuget Package](https://www.nuget.org/packages/EasyBus.RabbitMQIntegration/)
+```csharp   
 Install-Package EasyBus.RabbitMQIntegration
 ```
+
+Initialize [IocBootstrapper](https://github.com/serdardemir/EasyBus/blob/master/EasyBus.ConsumerService/IocBootstrapper.cs/)
+
+ ```csharp   
+Container container = new Container();
+
+//auto search all message handlers and register
+container.RegisterSingle<ISubscriber>(new Subscriber(container));
+
+var assembly = AppDomain.CurrentDomain.GetAssemblies().Where(x => x.FullName.Contains("EasyBus.Consumer")).FirstOrDefault();
+
+var handlers = assembly.GetExportedTypes().Where(x => x.IsMessageHandler(typeof(MessageHandler<>))).ToList();
+
+var responders = assembly.GetExportedTypes().Where(x => x.IsMessageHandler(typeof(MessageResponder<,>))).ToList();
+
+container.RegisterAll<IMessageHandler>(handlers);
+container.RegisterAll<IResponse>(responders);
+container.RegisterSingle<IPublisher>(new Publisher(container));
+container.RegisterSingle(new MessageEmitter(container));
+container.RegisterSingle(new RabbitMQIntegrationModule(container));
+```
+
 
 How to use?
 ========================
