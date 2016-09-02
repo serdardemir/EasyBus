@@ -45,10 +45,13 @@ How to use?
 
 
 
-
+    <!--Number of multi-thread subscriber-->
+    <add key="MaxThreads" value="10" />
 
 **Pub / Sub Sample**
 ```cs
+
+
 // Find subsriber. (RabbitMQ, ActiveMQ etc.)
 var subscriber = container.GetInstance<ISubscriber>();
 
