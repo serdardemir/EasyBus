@@ -3,6 +3,7 @@ using System.Linq;
 using EasyBus.Abstraction.Contracts;
 using Topshelf;
 using Topshelf.Logging;
+using EasyBus.Shared.Helpers;
 
 namespace EasyBus.ConsumerService
 {
@@ -29,22 +30,28 @@ namespace EasyBus.ConsumerService
             var subscriber = container.GetInstance<ISubscriber>();
 
             // Find all message handlers in running process
-            var gets = container.GetAllInstances<IMessageHandler>();
+            var handlers = container.GetAllInstances<IMessageHandler>();
             var responders = container.GetAllInstances<IResponse>();
 
-            logger.Info(gets.Count() + " message handlers found. Listening...");
+            logger.Info(handlers.Count() + " message handlers found. Listening...");
 
             logger.Info(responders.Count() + " responder found. Listening...");
 
             //Start to subscribe (async) for all message handlers
-            foreach (var item in gets)
+            foreach (var handler in handlers)
             {
-                subscriber.Subscribe(item);
+                for (int i = 0; i < ConfigHelper.MaxThreads; i++)
+                {
+                    subscriber.Subscribe(handler);
+                }
             }
 
             foreach (var responder in responders)
             {
-                responder.StartRespond(subscriber);
+                for (int i = 0; i < ConfigHelper.MaxThreads; i++)
+                {
+                    responder.StartRespond(subscriber);
+                }
             }
 
             return true;
@@ -63,7 +70,7 @@ namespace EasyBus.ConsumerService
         public bool Stop(HostControl hostControl)
         {
             //dispose
-            logger.Info("Consumer Service stoppped.");            
+            logger.Info("Consumer Service stoppped.");
             return true;
         }
     }

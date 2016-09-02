@@ -15,7 +15,7 @@ namespace EasyBus.RabbitMQIntegration
             container.Register<IRabbitBus, RabbitBus>(SimpleInjector.Lifestyle.Transient);
 
             var handler = DefineBusHandler();
-
+            
             IBus bus = RabbitHutch.CreateBus(ConfigHelper.ConnectionString, handler, serviceRegister => serviceRegister
                      .Register<IEasyNetQLogger, QueueLogManager>()
                      .Register<IConsumerErrorStrategy, ErrorStrategy>());

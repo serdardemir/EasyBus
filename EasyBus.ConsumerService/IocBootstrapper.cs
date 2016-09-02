@@ -13,7 +13,7 @@ using EasyBus.Consumer;
 namespace EasyBus.ConsumerService
 {
     public static class IocBootstrapper
-    { 
+    {
         private static object syncObj = new object();
 
         private static Container rootFactory = null;
@@ -37,9 +37,19 @@ namespace EasyBus.ConsumerService
             }
         }
 
+
         public static Container RegisterTypes()
         {
             Container container = new Container();
+
+            #region Validator
+
+            Validator.NotNullOrEmpty(ConfigHelper.ConnectionString, "ConnectionString may not be null or empty.");
+            Validator.NotNullOrEmpty(ConfigHelper.MaxThreads.ToString(), "Max Threads may not be null or empty.");
+            Validator.NotNullOrEmpty(ConfigHelper.RetryCount.ToString(), "Retry Count may not be null or empty.");
+            Validator.NotNullOrEmpty(ConfigHelper.RetryInterval.ToString(), "Retry Interval  may not be null or empty.");
+            #endregion
+
             
             #region Queue IoC
 
@@ -65,6 +75,8 @@ namespace EasyBus.ConsumerService
             container.RegisterSingle(new RabbitMQIntegrationModule(container));
 
             #endregion
+
+        
 
             container.Verify();
             return container;

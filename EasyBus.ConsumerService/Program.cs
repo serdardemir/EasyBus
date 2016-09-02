@@ -8,6 +8,8 @@ namespace EasyBus.ConsumerService
     {
         static void Main(string[] args)
         {
+
+           var res= IocBootstrapper.Instance;
             HostFactory.Run(x =>
             {
                 x.Service(() => new ConsumerService());

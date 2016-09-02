@@ -49,6 +49,7 @@
     <Compile Include="Helpers\IConsoleWriter.cs" />
     <Compile Include="Helpers\Policy.cs" />
     <Compile Include="Helpers\TypeExtensions.cs" />
+    <Compile Include="Helpers\Validator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
