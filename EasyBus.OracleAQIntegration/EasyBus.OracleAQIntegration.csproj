@@ -1,21 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{04D4CF27-E8F9-4428-8CFA-D5F86AF7E9AB}</ProjectGuid>
+    <ProjectGuid>{C9D38733-7122-4292-9287-A28EA226A6E3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EasyBus.Tests</RootNamespace>
-    <AssemblyName>EasyBus.Tests</AssemblyName>
+    <RootNamespace>EasyBus.OracleAQIntegration</RootNamespace>
+    <AssemblyName>EasyBus.OracleAQIntegration</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <NuGetPackageImportStamp>0b88f413</NuGetPackageImportStamp>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,7 +22,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -34,19 +30,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ploeh.AutoFixture">
-      <HintPath>..\ThirdParty\Ploeh.AutoFixture.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 12.0\Blend\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Ploeh.AutoFixture.Xunit">
-      <HintPath>..\ThirdParty\Ploeh.AutoFixture.Xunit.dll</HintPath>
+    <Reference Include="Oracle.DataAccess, Version=2.111.7.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\Oracle.DataAccess.dll</HintPath>
     </Reference>
-    <Reference Include="Shouldly">
-      <HintPath>..\ThirdParty\xUnit\Shouldly.dll</HintPath>
-    </Reference>
-    <Reference Include="SimpleInjector">
+    <Reference Include="SimpleInjector, Version=2.8.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\ThirdParty\SimpleInjector.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -57,45 +52,21 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="xunit.abstractions">
-      <HintPath>..\ThirdParty\xUnit\xunit.abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="xunit.assert">
-      <HintPath>..\ThirdParty\xUnit\xunit.assert.dll</HintPath>
-    </Reference>
-    <Reference Include="xunit.core">
-      <HintPath>..\ThirdParty\xUnit\xunit.core.dll</HintPath>
-    </Reference>
-    <Reference Include="xunit.execution.desktop">
-      <HintPath>..\ThirdParty\xUnit\xunit.execution.desktop.dll</HintPath>
-    </Reference>
-    <Reference Include="xunit.extensions">
-      <HintPath>..\ThirdParty\xUnit\xunit.extensions.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AQIntegration\AQIntegrationTests.cs" />
-    <Compile Include="IocBootstrapper.cs" />
-    <Compile Include="MessagePublisherFixture.cs" />
-    <Compile Include="MessagePublisherTests.cs" />
+    <Compile Include="OracleAQIntegrationModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publisher.cs" />
+    <Compile Include="Subscriber.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EasyBus.Abstraction\EasyBus.Abstraction.csproj">
       <Project>{4bc13074-2309-460d-b4a5-a5094604a67e}</Project>
       <Name>EasyBus.Abstraction</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EasyBus.Consumer\EasyBus.Consumer.csproj">
-      <Project>{36f0b9af-5326-4338-aee7-df36af5a397c}</Project>
-      <Name>EasyBus.Consumer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EasyBus.OracleAQIntegration\EasyBus.OracleAQIntegration.csproj">
-      <Project>{c9d38733-7122-4292-9287-a28ea226a6e3}</Project>
-      <Name>EasyBus.OracleAQIntegration</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EasyBus.RabbitMQIntegration\EasyBus.RabbitMQIntegration.csproj">
-      <Project>{2b7e16d8-f917-474d-ba38-7cf730e88b01}</Project>
-      <Name>EasyBus.RabbitMQIntegration</Name>
+    <ProjectReference Include="..\EasyBus.Shared\EasyBus.Shared.csproj">
+      <Project>{185fe1c3-fb98-4f64-bf30-4ef105479454}</Project>
+      <Name>EasyBus.Shared</Name>
     </ProjectReference>
     <ProjectReference Include="..\EasyBus.Types\EasyBus.Types.csproj">
       <Project>{744ad557-c72c-450d-9dde-3f2779995f0e}</Project>
@@ -104,20 +75,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props'))" />
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
-  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

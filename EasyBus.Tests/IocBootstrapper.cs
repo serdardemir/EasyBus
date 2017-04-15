@@ -37,16 +37,28 @@ namespace EasyBus.Tests
         {
             Container container = new Container();
             
-            #region Queue IoC
+            #region Queue IoC RabbitMQ
 
-            container.RegisterSingle<IPublisher>(new Publisher(container));
+            //container.RegisterSingle<IPublisher>(new Publisher(container));
+
+            //container.RegisterSingle(new MessageEmitter(container));
+
+            //container.RegisterSingle(new RabbitMQIntegrationModule(container));
+
+            #endregion
+
+
+            #region Queue IoC OracleAQ
+
+            container.RegisterSingle<IPublisher>(new OracleAQIntegration.Publisher(container));
+
+            container.RegisterSingle<ISubscriber>(new OracleAQIntegration.Subscriber());
 
             container.RegisterSingle(new MessageEmitter(container));
 
             container.RegisterSingle(new RabbitMQIntegrationModule(container));
 
             #endregion
-
             container.Verify();
             return container;
         }

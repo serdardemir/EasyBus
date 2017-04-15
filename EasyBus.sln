@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Tests", "EasyBus.Tests\EasyBus.Tests.csproj", "{04D4CF27-E8F9-4428-8CFA-D5F86AF7E9AB}"
 EndProject
@@ -27,6 +27,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Scheduler", "EasyBus.Scheduler\EasyBus.Scheduler.csproj", "{7326B8B0-09F7-4BF0-90AD-015CE188C680}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Mongo", "EasyBus.Mongo\EasyBus.Mongo.csproj", "{823D5BD1-C9BF-4ECA-BE21-9D27A0DDC404}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.OracleAQIntegration", "EasyBus.OracleAQIntegration\EasyBus.OracleAQIntegration.csproj", "{C9D38733-7122-4292-9287-A28EA226A6E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +72,10 @@ Global
 		{823D5BD1-C9BF-4ECA-BE21-9D27A0DDC404}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{823D5BD1-C9BF-4ECA-BE21-9D27A0DDC404}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{823D5BD1-C9BF-4ECA-BE21-9D27A0DDC404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D38733-7122-4292-9287-A28EA226A6E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D38733-7122-4292-9287-A28EA226A6E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D38733-7122-4292-9287-A28EA226A6E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D38733-7122-4292-9287-A28EA226A6E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

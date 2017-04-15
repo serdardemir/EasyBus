@@ -9,3 +9,9 @@ C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Abstraction\bin\Debug\Sim
 C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Abstraction\obj\Debug\EasyBus.Abstraction.csprojResolveAssemblyReference.cache
 C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Abstraction\obj\Debug\EasyBus.Abstraction.dll
 C:\Users\serdar.demir\Documents\GitHub\EasyBus\EasyBus.Abstraction\obj\Debug\EasyBus.Abstraction.pdb
+G:\Github\EasyBus\EasyBus.Abstraction\bin\Debug\EasyBus.Abstraction.dll
+G:\Github\EasyBus\EasyBus.Abstraction\bin\Debug\EasyBus.Abstraction.pdb
+G:\Github\EasyBus\EasyBus.Abstraction\bin\Debug\SimpleInjector.dll
+G:\Github\EasyBus\EasyBus.Abstraction\obj\Debug\EasyBus.Abstraction.csprojResolveAssemblyReference.cache
+G:\Github\EasyBus\EasyBus.Abstraction\obj\Debug\EasyBus.Abstraction.dll
+G:\Github\EasyBus\EasyBus.Abstraction\obj\Debug\EasyBus.Abstraction.pdb
