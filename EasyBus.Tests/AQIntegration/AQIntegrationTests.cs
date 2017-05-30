@@ -1,7 +1,6 @@
-﻿using EasyBus.Abstraction;
-using EasyBus.Abstraction.Contracts;
-using EasyBus.Consumer.Handlers;
-using EasyBus.Types.MessageTypes;
+﻿using EasyBus.Consumer.Handlers;
+using EasyBus.Contracts;
+using EasyBus.Shared.Types;
 using Xunit;
 
 namespace EasyBus.Tests.AQIntegration

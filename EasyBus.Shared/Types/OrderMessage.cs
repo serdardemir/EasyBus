@@ -1,6 +1,6 @@
-﻿using EasyBus.Abstraction.Contracts;
+﻿using EasyBus.Contracts;
 
-namespace EasyBus.Types.MessageTypes
+namespace EasyBus.Shared.Types
 {
 	public class OrderMessage : IMessage
 	{

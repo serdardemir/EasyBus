@@ -1,10 +1,10 @@
-﻿using EasyBus.Abstraction.Contracts;
-using EasyBus.Abstraction.Exceptions;
+﻿using EasyBus.Contracts;
+using EasyBus.Exceptions;
 using System.Configuration;
 using System.Linq;
 using System.Reflection;
 
-namespace EasyBus.Abstraction
+namespace EasyBus
 {
 	public class QueueInfo<T> where T : IMessage
 	{

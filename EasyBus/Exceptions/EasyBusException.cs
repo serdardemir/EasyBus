@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace EasyBus.Abstraction.Exceptions
+namespace EasyBus.Exceptions
 {
 	[Serializable]
 	public class EasyBusException :

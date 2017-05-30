@@ -108,3 +108,4 @@ UpgradeLog*.XML
 EasyBus.Abstraction/bin/Debug/EasyBus.Abstraction.dll
 EasyBus.Abstraction/bin/Debug/EasyBus.Abstraction.pdb
 EasyBus.Abstraction/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+EasyBus.Abstraction/bin/Debug/EasyBus.Abstraction.dll

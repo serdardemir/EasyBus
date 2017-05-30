@@ -64,9 +64,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EasyBus.Abstraction\EasyBus.Abstraction.csproj">
+    <ProjectReference Include="..\EasyBus\EasyBus.csproj">
       <Project>{4bc13074-2309-460d-b4a5-a5094604a67e}</Project>
-      <Name>EasyBus.Abstraction</Name>
+      <Name>EasyBus</Name>
     </ProjectReference>
     <ProjectReference Include="..\EasyBus.Consumer\EasyBus.Consumer.csproj">
       <Project>{36f0b9af-5326-4338-aee7-df36af5a397c}</Project>

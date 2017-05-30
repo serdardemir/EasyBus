@@ -1,4 +1,4 @@
-﻿using EasyBus.Abstraction.Contracts;
+﻿using EasyBus.Contracts;
 using System;
 using System.Collections.Generic;
 

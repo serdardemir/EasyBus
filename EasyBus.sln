@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Tests", "EasyBus.Tests\EasyBus.Tests.csproj", "{04D4CF27-E8F9-4428-8CFA-D5F86AF7E9AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Abstraction", "EasyBus.Abstraction\EasyBus.Abstraction.csproj", "{4BC13074-2309-460D-B4A5-A5094604A67E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus", "EasyBus\EasyBus.csproj", "{4BC13074-2309-460D-B4A5-A5094604A67E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.RabbitMQIntegration", "EasyBus.RabbitMQIntegration\EasyBus.RabbitMQIntegration.csproj", "{2B7E16D8-F917-474D-BA38-7CF730E88B01}"
 EndProject

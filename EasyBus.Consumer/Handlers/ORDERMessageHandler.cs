@@ -1,8 +1,6 @@
-﻿using EasyBus.Abstraction;
-using EasyBus.Abstraction.Contracts;
+﻿using EasyBus.Contracts;
 using EasyBus.Shared.Helpers;
 using EasyBus.Shared.Types;
-using EasyBus.Types.MessageTypes;
 using System;
 
 namespace EasyBus.Consumer.Handlers

@@ -1,5 +1,4 @@
-﻿using EasyBus.Abstraction;
-using Xunit;
+﻿using Xunit;
 
 namespace EasyBus.Tests
 {

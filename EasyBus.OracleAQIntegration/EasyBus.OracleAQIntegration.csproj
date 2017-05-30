@@ -60,9 +60,9 @@
     <Compile Include="Subscriber.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EasyBus.Abstraction\EasyBus.Abstraction.csproj">
+    <ProjectReference Include="..\EasyBus\EasyBus.csproj">
       <Project>{4bc13074-2309-460d-b4a5-a5094604a67e}</Project>
-      <Name>EasyBus.Abstraction</Name>
+      <Name>EasyBus</Name>
     </ProjectReference>
     <ProjectReference Include="..\EasyBus.Shared\EasyBus.Shared.csproj">
       <Project>{185fe1c3-fb98-4f64-bf30-4ef105479454}</Project>

@@ -1,4 +1,4 @@
-﻿namespace EasyBus.Abstraction.Convention
+﻿namespace EasyBus.Convention
 {
 	public interface IConsumerConvention
 	{

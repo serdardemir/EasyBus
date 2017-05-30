@@ -1,5 +1,4 @@
-﻿using EasyBus.Abstraction;
-using EasyBus.Shared.Helpers;
+﻿using EasyBus.Shared.Helpers;
 using EasyBus.Types.MessageTypes;
 using System;
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace EasyBus.Abstraction.Contracts
+namespace EasyBus.Contracts
 {
     public interface IMessage
     {

@@ -1,6 +1,6 @@
-﻿using EasyBus.Abstraction.Contracts;
+﻿using EasyBus.Contracts;
 using EasyBus.Shared.Helpers;
-using EasyBus.Types.MessageTypes;
+using EasyBus.Shared.Types;
 using Oracle.DataAccess.Client;
 using System;
 

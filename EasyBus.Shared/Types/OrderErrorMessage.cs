@@ -1,5 +1,4 @@
-﻿using EasyBus.Abstraction.Contracts;
-using EasyBus.Types.MessageTypes;
+﻿using EasyBus.Contracts;
 
 namespace EasyBus.Shared.Types
 {
