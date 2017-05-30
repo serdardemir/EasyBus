@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contracts\IErrorHandler.cs" />
+    <Compile Include="Contracts\ErrorHandler.cs" />
     <Compile Include="Contracts\IPublisher.cs" />
     <Compile Include="Contracts\IMessageBus.cs" />
     <Compile Include="Contracts\IMessageHandler.cs" />
