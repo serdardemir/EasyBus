@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Tests", "EasyBus.Tests\EasyBus.Tests.csproj", "{04D4CF27-E8F9-4428-8CFA-D5F86AF7E9AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Abstraction", "EasyBus.Abstraction\EasyBus.Abstraction.csproj", "{4BC13074-2309-460D-B4A5-A5094604A67E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.RabbitMQIntegration", "EasyBus.RabbitMQIntegration\EasyBus.RabbitMQIntegration.csproj", "{2B7E16D8-F917-474D-BA38-7CF730E88B01}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Types", "EasyBus.Types\EasyBus.Types.csproj", "{744AD557-C72C-450D-9DDE-3F2779995F0E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Consumer", "EasyBus.Consumer\EasyBus.Consumer.csproj", "{36F0B9AF-5326-4338-AEE7-DF36AF5A397C}"
 EndProject
@@ -30,6 +28,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.Mongo", "EasyBus.Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBus.OracleAQIntegration", "EasyBus.OracleAQIntegration\EasyBus.OracleAQIntegration.csproj", "{C9D38733-7122-4292-9287-A28EA226A6E3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{8FC86260-5CA5-49DA-A058-EBA38D34D647}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Loggers", "Loggers", "{3B7E85F1-7F10-4FF3-AA76-076049D1F557}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,10 +50,6 @@ Global
 		{2B7E16D8-F917-474D-BA38-7CF730E88B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B7E16D8-F917-474D-BA38-7CF730E88B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B7E16D8-F917-474D-BA38-7CF730E88B01}.Release|Any CPU.Build.0 = Release|Any CPU
-		{744AD557-C72C-450D-9DDE-3F2779995F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{744AD557-C72C-450D-9DDE-3F2779995F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{744AD557-C72C-450D-9DDE-3F2779995F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{744AD557-C72C-450D-9DDE-3F2779995F0E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36F0B9AF-5326-4338-AEE7-DF36AF5A397C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{36F0B9AF-5326-4338-AEE7-DF36AF5A397C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36F0B9AF-5326-4338-AEE7-DF36AF5A397C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -79,5 +77,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{823D5BD1-C9BF-4ECA-BE21-9D27A0DDC404} = {8FC86260-5CA5-49DA-A058-EBA38D34D647}
 	EndGlobalSection
 EndGlobal

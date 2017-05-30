@@ -1,41 +1,49 @@
 ﻿using EasyBus.Abstraction;
 using EasyBus.Abstraction.Contracts;
 using EasyBus.Shared.Helpers;
+using EasyBus.Shared.Types;
 using EasyBus.Types.MessageTypes;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EasyBus.Consumer.Handlers
 {
-    public class ORDERMessageHandler : MessageHandler<ORDERMessage>
-    {
+	public class OrderMessageHandler : MessageHandler<OrderMessage>
+	{
+		protected override void Handle(OrderMessage message)
+		{
+			Policy.Execute<OperationResult>(() =>
+			{
+				OperationResult operationResult = new OperationResult();
 
-        protected override void Handle(ORDERMessage message)
-        {
-            Policy.Execute<OperationResult>(() =>
-            {
-                OperationResult operationResult = new OperationResult();
+				try
+				{
+					//.....
+				}
+				catch (Exception exc)
+				{
+					operationResult.HasError = true;
+					operationResult.Exception = exc;
+				}
+				return operationResult;
+			}, message);
+		}
 
-                try
-                {
-                    //.....
+		public override string QueueName
+		{
+			get { return new QueueInfo<OrderMessage>(this).ToString(); }
+		}
 
-                }
-                catch (Exception exc)
-                {
-                    operationResult.HasError = true;
-                    operationResult.Exception = exc;
-                }
-                return operationResult;
-            }, message);
-        }
+		public class OrderErrorHandler : MessageHandler<OrderErrorMessage>, ErrorHandler
+		{
+			public override string QueueName
+			{
+				get { return new QueueInfo<OrderErrorMessage>(this).ToString(); }
+			}
 
-        public override string QueueName
-        {
-            get { return "ORDERMESSAGE"; }
-        }
-    }
+			protected override void Handle(OrderErrorMessage message)
+			{
+				throw new NotImplementedException();
+			}
+		}
+	}
 }

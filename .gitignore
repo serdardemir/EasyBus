@@ -104,3 +104,7 @@ UpgradeLog*.XML
 *.nupkg
 .vs/
 .idea/
+*.dll
+EasyBus.Abstraction/bin/Debug/EasyBus.Abstraction.dll
+EasyBus.Abstraction/bin/Debug/EasyBus.Abstraction.pdb
+EasyBus.Abstraction/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache

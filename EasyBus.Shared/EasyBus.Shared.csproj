@@ -52,6 +52,9 @@
     <Compile Include="Helpers\TypeExtensions.cs" />
     <Compile Include="Helpers\Validator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\LogMessage.cs" />
+    <Compile Include="Types\OrderErrorMessage.cs" />
+    <Compile Include="Types\OrderMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EasyBus.Abstraction\EasyBus.Abstraction.csproj">

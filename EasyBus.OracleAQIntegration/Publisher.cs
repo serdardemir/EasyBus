@@ -1,35 +1,34 @@
-﻿using System;
-using System.Linq;
-using EasyBus.Abstraction.Contracts;
+﻿using EasyBus.Abstraction.Contracts;
 using EasyBus.Shared.Helpers;
 using EasyBus.Types.MessageTypes;
 using Oracle.DataAccess.Client;
+using System;
 
 namespace EasyBus.OracleAQIntegration
 {
-    public class Publisher : IPublisher
-    {
-        private readonly SimpleInjector.Container container;
-        
-        public Publisher(SimpleInjector.Container container)
-        {
-            this.container = container;
-        }
+	public class Publisher : IPublisher
+	{
+		private readonly SimpleInjector.Container container;
 
-        public void Publish(IMessage message)
-        {
-            var oracleIntegrationModule = container.GetInstance<OracleAQIntegrationModule>();
-            var queue = oracleIntegrationModule.GetOracleQueue(message.GetType().Name);
-            OracleAQMessage aqMessage = new OracleAQMessage(SerializationHelper.SerializeObjectAsXml(typeof(ORDERMessage), message));
+		public Publisher(SimpleInjector.Container container)
+		{
+			this.container = container;
+		}
 
-            queue.Enqueue(aqMessage);
-        }
+		public void Publish(IMessage message)
+		{
+			var oracleIntegrationModule = container.GetInstance<OracleAQIntegrationModule>();
+			var queue = oracleIntegrationModule.GetOracleQueue(message.GetType().Name);
+			OracleAQMessage aqMessage = new OracleAQMessage(SerializationHelper.SerializeObjectAsXml(typeof(OrderMessage), message));
 
-        public IResponseMessage Request<TRequest, TResponse>(TRequest request, Action<TResponse> onResponse)
-            where TRequest : class
-            where TResponse : class
-        {
-            throw new NotImplementedException();
-        }
-    }
+			queue.Enqueue(aqMessage);
+		}
+
+		public IResponseMessage Request<TRequest, TResponse>(TRequest request, Action<TResponse> onResponse)
+			where TRequest : class
+			where TResponse : class
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

@@ -40,8 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Handlers\LOGMessageHandler.cs" />
-    <Compile Include="Handlers\ORDERMessageHandler.cs" />
+    <Compile Include="Handlers\LogMessageHandler.cs" />
+    <Compile Include="Handlers\OrderMessageHandler.cs" />
     <Compile Include="Integration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,14 +54,8 @@
       <Project>{185fe1c3-fb98-4f64-bf30-4ef105479454}</Project>
       <Name>EasyBus.Shared</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EasyBus.Types\EasyBus.Types.csproj">
-      <Project>{744ad557-c72c-450d-9dde-3f2779995f0e}</Project>
-      <Name>EasyBus.Types</Name>
-    </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Handlers\ErrorHandlers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

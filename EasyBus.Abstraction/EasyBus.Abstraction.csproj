@@ -34,6 +34,7 @@
       <HintPath>..\ThirdParty\SimpleInjector.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IErrorHandler.cs" />
     <Compile Include="Contracts\IPublisher.cs" />
     <Compile Include="Contracts\IMessageBus.cs" />
     <Compile Include="Contracts\IMessageHandler.cs" />
@@ -52,11 +54,16 @@
     <Compile Include="Contracts\IResponseMessage.cs" />
     <Compile Include="Contracts\IResponseMessageHandler.cs" />
     <Compile Include="Contracts\ISubscriber.cs" />
+    <Compile Include="Convention\ConsumerConvention.cs" />
+    <Compile Include="Convention\IConsumerConvention.cs" />
+    <Compile Include="Exceptions\ConventionException.cs" />
+    <Compile Include="Exceptions\EasyBusException.cs" />
     <Compile Include="MessageEmitter.cs" />
     <Compile Include="MessageHandler.cs" />
     <Compile Include="MessageResponder.cs" />
     <Compile Include="OperationResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueueInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

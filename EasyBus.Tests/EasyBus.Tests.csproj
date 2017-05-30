@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AQIntegration\AQIntegrationTests.cs" />
+    <Compile Include="ConventionTest.cs" />
     <Compile Include="IocBootstrapper.cs" />
     <Compile Include="MessagePublisherFixture.cs" />
     <Compile Include="MessagePublisherTests.cs" />
@@ -97,9 +98,9 @@
       <Project>{2b7e16d8-f917-474d-ba38-7cf730e88b01}</Project>
       <Name>EasyBus.RabbitMQIntegration</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EasyBus.Types\EasyBus.Types.csproj">
-      <Project>{744ad557-c72c-450d-9dde-3f2779995f0e}</Project>
-      <Name>EasyBus.Types</Name>
+    <ProjectReference Include="..\EasyBus.Shared\EasyBus.Shared.csproj">
+      <Project>{185fe1c3-fb98-4f64-bf30-4ef105479454}</Project>
+      <Name>EasyBus.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

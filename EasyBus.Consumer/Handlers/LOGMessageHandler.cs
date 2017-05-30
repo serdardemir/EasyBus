@@ -1,40 +1,34 @@
-﻿using System;
-using System.Linq;
-using EasyBus.Abstraction;
-using EasyBus.Types.MessageTypes;
+﻿using EasyBus.Abstraction;
 using EasyBus.Shared.Helpers;
+using EasyBus.Types.MessageTypes;
+using System;
 
 namespace EasyBus.Consumer.Handlers
 {
-    public class LOGMessageHandler : MessageHandler<LOGMessage>
-    {
-        protected override void Handle(LOGMessage message)
-        {
-           Policy.Execute<OperationResult>(() =>
-            {
-                OperationResult operationResult = new OperationResult();
-                
-                try
-                {
-                    //.....
-                    
-                }
-                catch (Exception exc)
-                {
-                    operationResult.HasError = true;
-                    operationResult.Exception = exc;
-                }
-                return operationResult;
-            }, message);
-        }
-        
+	public class LogMessageHandler : MessageHandler<LogMessage>
+	{
+		protected override void Handle(LogMessage message)
+		{
+			Policy.Execute<OperationResult>(() =>
+			 {
+				 OperationResult operationResult = new OperationResult();
 
-        public override string QueueName
-        {
-            get
-            {
-                return "LOG";
-            }
-        }
-    }
+				 try
+				 {
+					 //.....
+				 }
+				 catch (Exception exc)
+				 {
+					 operationResult.HasError = true;
+					 operationResult.Exception = exc;
+				 }
+				 return operationResult;
+			 }, message);
+		}
+
+		public override string QueueName
+		{
+			get { return new QueueInfo<LogMessage>(this).ToString(); }
+		}
+	}
 }
