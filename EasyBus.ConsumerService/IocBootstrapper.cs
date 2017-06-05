@@ -53,7 +53,7 @@ namespace EasyBus.ConsumerService
 
 			Activator.CreateInstance(typeof(Integration));
 
-			var assembly = AppDomain.CurrentDomain.GetAssemblies().Where(x => x.FullName.Contains("EasyBus.Consumer")).FirstOrDefault();
+			var assembly = AppDomain.CurrentDomain.GetAssemblies().Where(x => x.FullName.StartsWith("EasyBus.Consumer")).FirstOrDefault();
 			if (assembly == null)
 				Environment.FailFast("Opps..");
 
