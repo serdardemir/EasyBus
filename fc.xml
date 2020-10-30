@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VideoAdServingTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd">
+    <Ad id="pre-roll" >        <InLine>            <AdSystem><![CDATA[Revive Adserver Hosted edition - Ad delivery]]></AdSystem>
+                <AdTitle><![CDATA[33]]></AdTitle>
+                    <Description><![CDATA[Inline Video Ad]]></Description>
+                    <Impression>
+                        <URL id="primaryAdServer"><![CDATA[https://servedby.revive-adserver.net/lg.php?bannerid=22413&campaignid=7992&zoneid=6894&cb=f6cc70ef68]]></URL>
+                    </Impression>
+			    <Video>
+                    <Duration>00:00:00</Duration>
+                    <AdID><![CDATA[22413]]></AdID>
+                    
+                    <MediaFiles>
+                        <MediaFile delivery="progressive" bitrate="400" width="640" height="480" type="video/x-mp4">
+                            <URL><![CDATA[http://www.financialreport.gr/html5_ads/ELPE/20180710/EKO-EUROBANK-MUSIC.mp4]]></URL>
+                        </MediaFile>
+                    </MediaFiles>
+                </Video>
+
+                <TrackingEvents>
+                    <Tracking event="start">
+                        <URL id="primaryAdServer"><![CDATA[https://servedby.revive-adserver.net/fc.php?script=videoAds:vastEvent&bannerid=22413&zoneid=6894&event=start]]></URL>
+                    </Tracking>
+                    <Tracking event="midpoint">
+                        <URL id="primaryAdServer"><![CDATA[https://servedby.revive-adserver.net/fc.php?script=videoAds:vastEvent&bannerid=22413&zoneid=6894&event=midpoint]]></URL>
+                    </Tracking>
+                    <Tracking event="firstQuartile">
+                        <URL id="primaryAdServer"><![CDATA[https://servedby.revive-adserver.net/fc.php?script=videoAds:vastEvent&bannerid=22413&zoneid=6894&event=firstquartile]]></URL>
+                    </Tracking>
+                    <Tracking event="thirdQuartile">
+                        <URL id="primaryAdServer"><![CDATA[https://servedby.revive-adserver.net/fc.php?script=videoAds:vastEvent&bannerid=22413&zoneid=6894&event=thirdquartile]]></URL>
+                    </Tracking>
+                    <Tracking event="complete">
+                        <URL id="primaryAdServer"><![CDATA[https://servedby.revive-adserver.net/fc.php?script=videoAds:vastEvent&bannerid=22413&zoneid=6894&event=complete]]></URL>
+                    </Tracking>
+                    <Tracking event="mute">
+                        <URL id="primaryAdServer"><![CDATA[https://servedby.revive-adserver.net/fc.php?script=videoAds:vastEvent&bannerid=22413&zoneid=6894&event=mute]]></URL>
+                    </Tracking>
+                    <Tracking event="pause">
+                        <URL id="primaryAdServer"><![CDATA[https://servedby.revive-adserver.net/fc.php?script=videoAds:vastEvent&bannerid=22413&zoneid=6894&event=pause]]></URL>
+                    </Tracking>
+                    <Tracking event="replay">
+                        <URL id="primaryAdServer"><![CDATA[https://servedby.revive-adserver.net/fc.php?script=videoAds:vastEvent&bannerid=22413&zoneid=6894&event=replay]]></URL>
+                    </Tracking>
+                    <Tracking event="fullscreen">
+                        <URL id="primaryAdServer"><![CDATA[https://servedby.revive-adserver.net/fc.php?script=videoAds:vastEvent&bannerid=22413&zoneid=6894&event=fullscreen]]></URL>
+                    </Tracking>
+                    <Tracking event="stop">
+                        <URL id="primaryAdServer"><![CDATA[https://servedby.revive-adserver.net/fc.php?script=videoAds:vastEvent&bannerid=22413&zoneid=6894&event=stop]]></URL>
+                    </Tracking>
+                    <Tracking event="unmute">
+                        <URL id="primaryAdServer"><![CDATA[https://servedby.revive-adserver.net/fc.php?script=videoAds:vastEvent&bannerid=22413&zoneid=6894&event=unmute]]></URL>
+                    </Tracking>
+                   <Tracking event="resume">
+                        <URL id="primaryAdServer"><![CDATA[https://servedby.revive-adserver.net/fc.php?script=videoAds:vastEvent&bannerid=22413&zoneid=6894&event=resume]]></URL>
+                    </Tracking>
+                </TrackingEvents>        </InLine>
+    </Ad>
+
+</VideoAdServingTemplate>
