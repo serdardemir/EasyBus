@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="3.0">
+  <Ad id="000000001">
+    <InLine>
+      <AdSystem>RMP</AdSystem>
+      <AdTitle>Inline linear video ad</AdTitle>
+      <Description><![CDATA[Test adTag for Radiant Media Player - inline linear VAST 3 video ad]]></Description>
+      <Error><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=error&errorcode=[ERRORCODE]]]></Error>
+      <Impression><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=impression&currenttime=[CONTENTPLAYHEAD]&cachebusting=[CACHEBUSTING]&asseturi=[ASSETURI]]]></Impression>
+      <Creatives>
+        <Creative id="00000000001" sequence="1">
+          <Linear>
+            <Duration>00:00:10</Duration>
+            <TrackingEvents>
+              <Tracking event="start"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=start&url=[url]&correlator=[timestamp]&referrer_url=[referrer_url]]]></Tracking>
+              <Tracking event="firstQuartile"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=firstQuartile]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=midpoint]]></Tracking>
+              <Tracking event="thirdQuartile"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=thirdQuartile]]></Tracking>
+              <Tracking event="complete"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=complete]]></Tracking>
+              <Tracking event="mute"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=mute]]></Tracking>
+              <Tracking event="unmute"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=unmute]]></Tracking>
+              <Tracking event="rewind"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=rewind]]></Tracking>
+              <Tracking event="pause"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=pause]]></Tracking>
+              <Tracking event="resume"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=resume]]></Tracking>
+              <Tracking event="fullscreen"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=fullscreen]]></Tracking>
+              <Tracking event="creativeView"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=creativeView]]></Tracking>
+              <Tracking event="exitFullscreen"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=exitFullscreen]]></Tracking>
+              <Tracking event="acceptInvitationLinear"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=acceptInvitationLinear]]></Tracking>
+              <Tracking event="closeLinear"><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=closeLinear]]></Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough><![CDATA[https://www.radiantmediaplayer.com]]></ClickThrough>
+              <ClickTracking><![CDATA[https://www.radiantmediaplayer.com/vast/tags/ping.gif?type=clickTracking]]></ClickTracking>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile id="RMP1" delivery="progressive" width="480" height="270" type="video/mp4" bitrate="327" scalable="true" maintainAspectRatio="true"><![CDATA[https://www.radiantmediaplayer.com/vast/mp4s/ad-10s-270p.mp4]]></MediaFile>
+              <MediaFile id="RMP2" delivery="progressive" width="640" height="360" type="video/mp4" bitrate="242" scalable="true" maintainAspectRatio="true"><![CDATA[https://www.radiantmediaplayer.com/vast/mp4s/ad-10s.mp4]]></MediaFile>
+              <MediaFile id="RMP3" delivery="progressive" width="320" height="180" type="video/mp4" bitrate="239" scalable="true" maintainAspectRatio="true"><![CDATA[https://www.radiantmediaplayer.com/vast/mp4s/ad-10s-180p.mp4]]></MediaFile>
+              <MediaFile id="RMP4" delivery="progressive" width="480" height="270" type="video/webm" bitrate="233" scalable="true" maintainAspectRatio="true"><![CDATA[https://www.radiantmediaplayer.com/vast/mp4s/ad-10s-270p.webm]]></MediaFile>
+              <MediaFile id="RMP5" delivery="progressive" width="640" height="360" type="video/webm" bitrate="289" scalable="true" maintainAspectRatio="true"><![CDATA[https://www.radiantmediaplayer.com/vast/mp4s/ad-10s.webm]]></MediaFile>
+              <MediaFile id="RMP6" delivery="progressive" width="320" height="180" type="video/webm" bitrate="166" scalable="true" maintainAspectRatio="true"><![CDATA[https://www.radiantmediaplayer.com/vast/mp4s/ad-10s-180p.webm]]></MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
